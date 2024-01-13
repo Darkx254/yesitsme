@@ -24,7 +24,7 @@ def banner():
     print("\n\tTwitter: " + Fore.MAGENTA + "@blackeko5")
 
 
-def getUserId(username, sessionsId):
+def getUserId(username, sessionsId):ericatheespartan
     cookies = {'sessionid': sessionsId}
     headers = {'User-Agent': 'Instagram 64.0.0.14.96', }
     r = get('https://www.instagram.com/{}/?__a=1'.format(username),
@@ -67,7 +67,8 @@ def advanced_lookup(username):
                 'q': phone_number_raw,
                 'ig_sig_key_version': SIG_KEY_VERSION
                 }
-        return data
+        return dat
+    
 
     data = generate_signature(json.dumps(generate_data(username)))
     headers = {
